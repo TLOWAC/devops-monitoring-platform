@@ -2,10 +2,11 @@
   "extends": "@shared/typescript-config/nextjs.json",
   "compilerOptions": {
     "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+      {"name": "next"}
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
