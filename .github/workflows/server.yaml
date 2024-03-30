@@ -7,7 +7,7 @@ on:
       - "apps/api/**"
 
 env:
-  NAME: ${{ github.actor }}
+  NAME: tlowac
   REPO: devops-platform-backend
   REGISTRY_PREFIX: ghcr.io
 

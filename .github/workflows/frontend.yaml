@@ -7,7 +7,7 @@ on:
       - "apps/web/**"
 
 env:
-  NAME: ${{ github.actor }}
+  NAME: tlowac
   REPO: devops-platform-frontend
   REGISTRY_PREFIX: ghcr.io
 
