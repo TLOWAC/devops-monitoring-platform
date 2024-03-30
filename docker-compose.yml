@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  web:
+    container_name: web
+    image: ghcr.io/tlowac/devops-platform-frontend
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - devops_platform_network
+  api:
+    container_name: api
+    image: ghcr.io/tlowac/devops-platform-backend
+    restart: always
+    ports:
+      - 3031:3031
+    networks:
+      - devops_platform_network
+
+
+# Define a network, which allows containers to communicate
+# with each other, by using their container name as a hostname
+networks:
+  devops_platform_network:
+    external: true
